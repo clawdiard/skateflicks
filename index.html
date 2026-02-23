@@ -63,6 +63,12 @@ footer{text-align:center;padding:2rem;color:var(--muted);font-size:.85rem;border
 </head>
 <body>
 
+<nav style="display:flex;align-items:center;gap:1rem;padding:1rem 1.5rem;border-bottom:1px solid #1a1a2a">
+  <a href="index.html" style="font-size:1.2rem;font-weight:800;background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;text-decoration:none">🎬 SkateFlicks</a>
+  <a href="index.html" style="color:var(--accent);font-size:.9rem;text-decoration:none">Films</a>
+  <a href="skaters.html" style="color:var(--muted);font-size:.9rem;text-decoration:none">Skaters</a>
+</nav>
+
 <div class="hero">
   <h1>🎬 SkateFlicks</h1>
   <p>The definitive encyclopedia of skateboarding films & video parts</p>
@@ -174,7 +180,7 @@ function openModal(id){
       <div class="stars">${'★'.repeat(f.rating)}${'☆'.repeat(5-f.rating)}</div>
       <p class="desc">${f.description}</p>
       <div class="section-title">Featured Skaters</div>
-      <div class="skater-list">${f.skaters.map(s=>`<span class="skater-chip">${s}</span>`).join('')}</div>
+      <div class="skater-list">${f.skaters.map(s=>`<a href="skaters.html#${s.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/(^-|-$)/g,'')}" class="skater-chip" style="text-decoration:none;color:inherit;cursor:pointer;transition:.2s;border:1px solid #333">${s}</a>`).join('')}</div>
       <div class="section-title">Genres</div>
       <div class="card-genres">${f.genre.map(g=>`<span class="genre-tag">${g}</span>`).join('')}</div>
       <div class="section-title">Watch</div>
