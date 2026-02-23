@@ -58,6 +58,22 @@ a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
 .watch-btn{padding:.5rem 1rem;border-radius:8px;background:var(--accent);color:#fff;font-weight:600;font-size:.85rem;transition:.2s}
 .watch-btn:hover{opacity:.85;text-decoration:none}
 
+.user-rating{display:flex;align-items:center;gap:.5rem;margin-top:.5rem}
+.user-stars{display:inline-flex;gap:2px;cursor:pointer}
+.user-stars .star{color:#444;font-size:1rem;transition:.15s;user-select:none}
+.user-stars .star:hover,.user-stars .star.active{color:#ffd60a}
+.user-stars .star.hovered{color:#ffd60a;opacity:.7}
+.fav-btn{background:none;border:none;font-size:1.1rem;cursor:pointer;transition:.2s;padding:2px;line-height:1;filter:grayscale(1) opacity(.4)}
+.fav-btn.active{filter:none}
+.fav-btn:hover{filter:none;transform:scale(1.2)}
+.card .fav-btn{position:absolute;top:.6rem;right:.6rem;font-size:1.2rem;z-index:2}
+.card{position:relative}
+.user-rating-label{font-size:.75rem;color:var(--muted)}
+.avg-user-badge{font-size:.75rem;color:var(--accent2);margin-left:.25rem}
+
+.favs-toggle{padding:.5rem 1rem;border-radius:20px;border:1px solid #333;background:var(--surface);color:var(--muted);cursor:pointer;font-size:.85rem;transition:.2s}
+.favs-toggle:hover,.favs-toggle.active{border-color:#ff4d6d;color:#ff4d6d;background:var(--surface2)}
+
 footer{text-align:center;padding:2rem;color:var(--muted);font-size:.85rem;border-top:1px solid #1a1a2a}
 </style>
 </head>
@@ -76,10 +92,12 @@ footer{text-align:center;padding:2rem;color:var(--muted);font-size:.85rem;border
 
 <div class="controls">
   <input class="search" type="text" placeholder="Search films, skaters, companies..." id="search">
+  <button class="favs-toggle" id="favs-toggle" onclick="toggleFavsFilter()">❤️ Favorites</button>
   <select class="sort-select" id="sort">
     <option value="year-desc">Newest First</option>
     <option value="year-asc">Oldest First</option>
     <option value="rating">Top Rated</option>
+    <option value="user-rating">My Rating</option>
     <option value="alpha">A-Z</option>
   </select>
 </div>
@@ -98,7 +116,65 @@ footer{text-align:center;padding:2rem;color:var(--muted);font-size:.85rem;border
 </footer>
 
 <script>
-let films=[];let activeGenres=new Set();
+let films=[];let activeGenres=new Set();let showFavsOnly=false;
+
+// localStorage helpers
+function getUserRatings(){try{return JSON.parse(localStorage.getItem('sf-ratings')||'{}');}catch(e){return {};}}
+function setUserRating(id,val){const r=getUserRatings();if(val===0)delete r[id];else r[id]=val;localStorage.setItem('sf-ratings',JSON.stringify(r));}
+function getUserRating(id){return getUserRatings()[id]||0;}
+function getFavs(){try{return JSON.parse(localStorage.getItem('sf-favs')||'[]');}catch(e){return [];}}
+function toggleFav(id){let f=getFavs();if(f.includes(id))f=f.filter(x=>x!==id);else f.push(id);localStorage.setItem('sf-favs',JSON.stringify(f));}
+function isFav(id){return getFavs().includes(id);}
+
+function toggleFavsFilter(){
+  showFavsOnly=!showFavsOnly;
+  document.getElementById('favs-toggle').classList.toggle('active',showFavsOnly);
+  render();
+}
+
+function buildStarsHTML(filmId,context){
+  const ur=getUserRating(filmId);
+  let stars='';
+  for(let i=1;i<=5;i++){
+    stars+=`<span class="star ${i<=ur?'active':''}" data-film="${filmId}" data-val="${i}" data-ctx="${context}" onmouseenter="hoverStar(this)" onmouseleave="unhoverStar(this)" onclick="rateStar(event,this)">★</span>`;
+  }
+  return stars;
+}
+
+function hoverStar(el){
+  const val=+el.dataset.val;
+  const siblings=el.parentElement.querySelectorAll('.star');
+  siblings.forEach(s=>{s.classList.toggle('hovered',+s.dataset.val<=val);});
+}
+function unhoverStar(el){
+  el.parentElement.querySelectorAll('.star').forEach(s=>s.classList.remove('hovered'));
+}
+function rateStar(e,el){
+  e.stopPropagation();
+  const id=el.dataset.film;const val=+el.dataset.val;
+  const cur=getUserRating(id);
+  setUserRating(id,cur===val?0:val);// click same star to clear
+  // re-render only stars in same context
+  if(el.dataset.ctx==='modal'){
+    document.querySelector('.modal .user-stars').innerHTML=buildStarsHTML(id,'modal');
+    // also update card behind
+    render();
+  }else{
+    render();
+  }
+}
+
+function handleFavClick(e,id){
+  e.stopPropagation();
+  toggleFav(id);
+  // if modal open, update it too
+  const modalOverlay=document.getElementById('modal-overlay');
+  if(modalOverlay.classList.contains('open')){
+    const favBtn=document.querySelector('.modal .fav-btn');
+    if(favBtn)favBtn.classList.toggle('active',isFav(id));
+  }
+  render();
+}
 
 async function init(){
   const r=await fetch('data/films.json');
@@ -127,6 +203,7 @@ function getFiltered(){
   let q=document.getElementById('search').value.toLowerCase();
   let sort=document.getElementById('sort').value;
   let f=films.filter(film=>{
+    if(showFavsOnly&&!isFav(film.id))return false;
     if(q&&!film.title.toLowerCase().includes(q)&&!film.company.toLowerCase().includes(q)&&!film.skaters.some(s=>s.toLowerCase().includes(q)))return false;
     if(activeGenres.size&&!film.genre.some(g=>activeGenres.has(g)))return false;
     return true;
@@ -134,13 +211,15 @@ function getFiltered(){
   if(sort==='year-desc')f.sort((a,b)=>b.year-a.year);
   else if(sort==='year-asc')f.sort((a,b)=>a.year-b.year);
   else if(sort==='rating')f.sort((a,b)=>b.rating-a.rating||b.year-a.year);
+  else if(sort==='user-rating')f.sort((a,b)=>(getUserRating(b.id)||0)-(getUserRating(a.id)||0)||b.year-a.year);
   else f.sort((a,b)=>a.title.localeCompare(b.title));
   return f;
 }
 
 function render(){
   const filtered=getFiltered();
-  document.getElementById('stats').textContent=`Showing ${filtered.length} of ${films.length} films`;
+  const favCount=getFavs().length;
+  document.getElementById('stats').textContent=`Showing ${filtered.length} of ${films.length} films`+(favCount?` · ${favCount} favorited`:'');
   const tl=document.getElementById('timeline');
   tl.innerHTML='';
   const decades={};
@@ -152,7 +231,10 @@ function render(){
     tl.appendChild(label);
     const grid=document.createElement('div');grid.className='grid';
     decades[decade].forEach(film=>{
+      const ur=getUserRating(film.id);
+      const favActive=isFav(film.id)?'active':'';
       grid.innerHTML+=`<div class="card" onclick="openModal('${film.id}')">
+        <button class="fav-btn ${favActive}" onclick="handleFavClick(event,'${film.id}')" title="Toggle favorite">❤️</button>
         <div class="card-cover" style="background:${film.coverColor}"></div>
         <div class="card-body">
           <div class="card-year">${film.year}</div>
@@ -160,7 +242,11 @@ function render(){
           <div class="card-company">${film.company} · Dir: ${film.director}</div>
           <div class="card-skaters">${film.skaters.join(', ')}</div>
           <div class="card-genres">${film.genre.map(g=>`<span class="genre-tag">${g}</span>`).join('')}</div>
-          <div class="stars">${'★'.repeat(film.rating)}${'☆'.repeat(5-film.rating)}</div>
+          <div class="stars">${'★'.repeat(film.rating)}${'☆'.repeat(5-film.rating)} <span class="avg-user-badge">editorial</span></div>
+          <div class="user-rating">
+            <span class="user-rating-label">Your rating:</span>
+            <span class="user-stars">${buildStarsHTML(film.id,'card')}</span>
+          </div>
         </div>
       </div>`;
     });
@@ -170,14 +256,22 @@ function render(){
 
 function openModal(id){
   const f=films.find(x=>x.id===id);if(!f)return;
+  const favActive=isFav(id)?'active':'';
   const m=document.getElementById('modal');
   m.innerHTML=`
     <div class="modal-cover" style="background:${f.coverColor}"></div>
     <button class="modal-close" onclick="closeModal()">×</button>
     <div class="modal-body">
-      <h2>${f.title}</h2>
+      <div style="display:flex;align-items:center;gap:.75rem">
+        <h2 style="flex:1">${f.title}</h2>
+        <button class="fav-btn ${favActive}" onclick="handleFavClick(event,'${id}')" title="Toggle favorite" style="font-size:1.5rem">❤️</button>
+      </div>
       <div class="meta">${f.year} · ${f.company} · Dir: ${f.director}</div>
-      <div class="stars">${'★'.repeat(f.rating)}${'☆'.repeat(5-f.rating)}</div>
+      <div class="stars">${'★'.repeat(f.rating)}${'☆'.repeat(5-f.rating)} <span class="avg-user-badge">editorial</span></div>
+      <div class="user-rating" style="margin:.5rem 0">
+        <span class="user-rating-label">Your rating:</span>
+        <span class="user-stars">${buildStarsHTML(id,'modal')}</span>
+      </div>
       <p class="desc">${f.description}</p>
       <div class="section-title">Featured Skaters</div>
       <div class="skater-list">${f.skaters.map(s=>`<a href="skaters.html#${s.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/(^-|-$)/g,'')}" class="skater-chip" style="text-decoration:none;color:inherit;cursor:pointer;transition:.2s;border:1px solid #333">${s}</a>`).join('')}</div>
