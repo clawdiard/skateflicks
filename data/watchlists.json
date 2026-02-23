@@ -1,0 +1,50 @@
+[
+  {
+    "id": "best-nyc-parts",
+    "title": "Best NYC Parts",
+    "emoji": "🗽",
+    "description": "The greatest skateboarding captured on the streets of New York City — from iconic spots like the Brooklyn Banks to Love Park pilgrimages.",
+    "color": "#ff6b35",
+    "films": ["trilogy", "photosynthesis", "bag-of-suck", "cherry", "purple-playgrounds", "inhabitants", "hot-chocolate"]
+  },
+  {
+    "id": "technical-masters",
+    "title": "Technical Masters",
+    "emoji": "🎯",
+    "description": "Mind-bending flip tricks, impossible ledge combos, and the most technically gifted skaters pushing the limits of what's possible on a board.",
+    "color": "#4ecdc4",
+    "films": ["menikmati", "yeah-right", "fully-flared", "mouse", "video-days", "really-sorry", "mindfield", "pretty-sweet"]
+  },
+  {
+    "id": "gnarly-slams",
+    "title": "Gnarly Slams",
+    "emoji": "💀",
+    "description": "Not for the faint of heart. These films showcase the most reckless, fearless, bone-crunching skateboarding ever committed to tape.",
+    "color": "#e63946",
+    "films": ["welcome-to-hell", "baker-bootleg", "baker3", "misled-youth", "the-end", "baker-2g", "baker-has-a-deathwish", "bake-and-destroy", "gang-gang"]
+  },
+  {
+    "id": "art-house-essentials",
+    "title": "Art House Essentials",
+    "emoji": "🎨",
+    "description": "Where skateboarding meets cinema. Beautiful cinematography, experimental editing, and artistic vision that transcends the skate video format.",
+    "color": "#c77dff",
+    "films": ["goldfish", "a-beautiful-thing", "away-days", "we-are-blood", "chronicles-vol-3", "in-bloom", "blessed"]
+  },
+  {
+    "id": "golden-era",
+    "title": "The Golden Era (1984-1999)",
+    "emoji": "📼",
+    "description": "VHS classics that built skateboarding culture. Before HD, before social media — just pure skating and DIY filmmaking.",
+    "color": "#fca311",
+    "films": ["bones-brigade", "animal-chin", "video-days", "questionable", "goldfish", "second-hand-smoke", "mouse", "welcome-to-hell"]
+  },
+  {
+    "id": "epic-productions",
+    "title": "Epic Productions",
+    "emoji": "🏆",
+    "description": "The blockbusters. Multi-year productions with massive budgets, all-star lineups, and premiere events that shook the skate world.",
+    "color": "#06d6a0",
+    "films": ["fully-flared", "stay-gold", "propeller", "pretty-sweet", "yeah-right", "the-end", "we-are-blood", "sorry", "really-sorry", "extremely-sorry"]
+  }
+]

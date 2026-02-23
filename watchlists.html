@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Watch Lists — SkateFlicks</title>
+<meta name="description" content="Curated skateboarding film playlists: Best NYC Parts, Technical Masters, Gnarly Slams, Art House Essentials, and more.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎬</text></svg>">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#0a0a0f;--surface:#14141f;--surface2:#1e1e2e;--text:#e8e8f0;--muted:#8888a0;--accent:#ff4d6d;--accent2:#c77dff}
+body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+
+nav{display:flex;align-items:center;gap:1rem;padding:1rem 1.5rem;border-bottom:1px solid #1a1a2a}
+
+.hero{text-align:center;padding:3rem 1rem 2rem;background:linear-gradient(180deg,#1a0a2e 0%,var(--bg) 100%)}
+.hero h1{font-size:clamp(2rem,5vw,3rem);font-weight:800;background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero p{color:var(--muted);font-size:1.1rem;margin-top:.5rem;max-width:550px;margin-inline:auto}
+
+.lists-container{max-width:1000px;margin:2rem auto;padding:0 1.5rem}
+
+.watchlist{margin-bottom:3rem;border-radius:16px;overflow:hidden;background:var(--surface);border:1px solid #222}
+.watchlist-header{padding:2rem;position:relative;overflow:hidden}
+.watchlist-header::before{content:'';position:absolute;inset:0;opacity:.15}
+.watchlist-emoji{font-size:2.5rem;margin-bottom:.5rem}
+.watchlist-title{font-size:1.6rem;font-weight:800;margin-bottom:.5rem}
+.watchlist-desc{color:var(--muted);font-size:.95rem;line-height:1.5;max-width:700px}
+.watchlist-count{display:inline-block;margin-top:.75rem;padding:.25rem .75rem;border-radius:12px;font-size:.8rem;color:var(--text);background:rgba(255,255,255,.08)}
+
+.films-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1px;background:#1a1a2a}
+.film-card{background:var(--surface);padding:1.25rem;transition:.2s;cursor:pointer;position:relative}
+.film-card:hover{background:var(--surface2)}
+.film-number{position:absolute;top:1rem;right:1rem;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:700;background:rgba(255,255,255,.06);color:var(--muted)}
+.film-title{font-size:1.05rem;font-weight:700;margin-bottom:.25rem;padding-right:2rem}
+.film-year{color:var(--muted);font-size:.85rem;margin-bottom:.5rem}
+.film-genres{display:flex;flex-wrap:wrap;gap:.35rem}
+.genre-tag{padding:.15rem .5rem;border-radius:10px;font-size:.7rem;border:1px solid #333;color:var(--muted)}
+.film-skaters{color:var(--muted);font-size:.8rem;margin-top:.5rem;line-height:1.4}
+.film-rating{margin-top:.4rem;font-size:.8rem;color:#fca311}
+
+footer{text-align:center;padding:2rem;color:var(--muted);font-size:.85rem;border-top:1px solid #1a1a2a;margin-top:2rem}
+
+@media(max-width:600px){
+  .films-grid{grid-template-columns:1fr}
+  .watchlist-header{padding:1.5rem}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" style="font-size:1.2rem;font-weight:800;background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;text-decoration:none">🎬 SkateFlicks</a>
+  <a href="index.html" style="color:var(--muted);font-size:.9rem;text-decoration:none">Films</a>
+  <a href="skaters.html" style="color:var(--muted);font-size:.9rem;text-decoration:none">Skaters</a>
+  <a href="watchlists.html" style="color:var(--accent);font-size:.9rem;text-decoration:none">Watch Lists</a>
+</nav>
+
+<div class="hero">
+  <h1>📺 Watch Lists</h1>
+  <p>Curated playlists to guide your skate film journey — from NYC street legends to art house masterpieces.</p>
+</div>
+
+<div class="lists-container" id="lists"></div>
+
+<footer>
+  <p>🎬 SkateFlicks — Built by <a href="https://clawdiard.github.io/clawdia-homepage/">Clawdia</a></p>
+  <p style="margin-top:.5rem">An <a href="https://openclaw.ai">OpenClaw</a> Project</p>
+</footer>
+
+<script>
+async function init(){
+  const [watchlists, films] = await Promise.all([
+    fetch('data/watchlists.json').then(r=>r.json()),
+    fetch('data/films.json').then(r=>r.json())
+  ]);
+  const filmMap = Object.fromEntries(films.map(f=>[f.id,f]));
+  const container = document.getElementById('lists');
+
+  watchlists.forEach(list=>{
+    const listFilms = list.films.map(id=>filmMap[id]).filter(Boolean);
+    const el = document.createElement('div');
+    el.className = 'watchlist';
+    el.innerHTML = `
+      <div class="watchlist-header" style="background:linear-gradient(135deg,${list.color}15,transparent)">
+        <div class="watchlist-emoji">${list.emoji}</div>
+        <div class="watchlist-title" style="color:${list.color}">${list.title}</div>
+        <div class="watchlist-desc">${list.description}</div>
+        <div class="watchlist-count">${listFilms.length} films</div>
+      </div>
+      <div class="films-grid">
+        ${listFilms.map((f,i)=>`
+          <a href="index.html#${f.id}" class="film-card" style="text-decoration:none;color:inherit;border-left:3px solid ${list.color}">
+            <div class="film-number">${i+1}</div>
+            <div class="film-title">${f.title}</div>
+            <div class="film-year">${f.year} · ${f.company||'Independent'}</div>
+            <div class="film-genres">${f.genre.map(g=>`<span class="genre-tag">${g}</span>`).join('')}</div>
+            <div class="film-skaters">ft. ${f.skaters.slice(0,4).join(', ')}${f.skaters.length>4?' +more':''}</div>
+            <div class="film-rating">${'★'.repeat(f.rating)}${'☆'.repeat(5-f.rating)}</div>
+          </a>
+        `).join('')}
+      </div>
+    `;
+    container.appendChild(el);
+  });
+}
+init();
+</script>
+</body>
+</html>
