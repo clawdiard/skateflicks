@@ -58,6 +58,19 @@ a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
 .watch-btn{padding:.5rem 1rem;border-radius:8px;background:var(--accent);color:#fff;font-weight:600;font-size:.85rem;transition:.2s}
 .watch-btn:hover{opacity:.85;text-decoration:none}
 
+.parts-list{list-style:none;padding:0;margin:0}
+.parts-list li{display:flex;align-items:center;gap:.75rem;padding:.5rem .75rem;border-radius:8px;transition:.2s;cursor:pointer;border:1px solid transparent}
+.parts-list li:hover{background:var(--surface2);border-color:#333}
+.part-time{font-family:'SF Mono',monospace;font-size:.85rem;color:var(--accent);font-weight:600;min-width:50px}
+.part-skater{font-size:.9rem}
+.part-play{font-size:.75rem;color:var(--accent2);margin-left:auto;opacity:0;transition:.2s}
+.parts-list li:hover .part-play{opacity:1}
+
+.embed-container{margin-top:1rem;border-radius:12px;overflow:hidden;background:#000;aspect-ratio:16/9;position:relative}
+.embed-container iframe{width:100%;height:100%;border:none}
+.embed-placeholder{display:flex;align-items:center;justify-content:center;width:100%;height:100%;color:var(--muted);font-size:.9rem;cursor:pointer;transition:.2s;aspect-ratio:16/9;background:var(--surface2);border-radius:12px;border:2px dashed #333}
+.embed-placeholder:hover{border-color:var(--accent);color:var(--accent)}
+
 .user-rating{display:flex;align-items:center;gap:.5rem;margin-top:.5rem}
 .user-stars{display:inline-flex;gap:2px;cursor:pointer}
 .user-stars .star{color:#444;font-size:1rem;transition:.15s;user-select:none}
@@ -277,6 +290,11 @@ function openModal(id){
       <div class="skater-list">${f.skaters.map(s=>`<a href="skaters.html#${s.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/(^-|-$)/g,'')}" class="skater-chip" style="text-decoration:none;color:inherit;cursor:pointer;transition:.2s;border:1px solid #333">${s}</a>`).join('')}</div>
       <div class="section-title">Genres</div>
       <div class="card-genres">${f.genre.map(g=>`<span class="genre-tag">${g}</span>`).join('')}</div>
+      ${f.parts&&f.parts.length?`
+      <div class="section-title">Video Parts & Timestamps</div>
+      <ul class="parts-list">${f.parts.map(p=>`<li onclick="jumpToTimestamp('${f.id}',${p.seconds})"><span class="part-time">${p.timestamp}</span><span class="part-skater">${p.skater}</span><span class="part-play">▶ Play</span></li>`).join('')}</ul>
+      <div id="embed-${f.id}"><div class="embed-placeholder" onclick="loadEmbed('${f.id}',0)">🎬 Click to load video player</div></div>
+      `:''}
       <div class="section-title">Watch</div>
       <div class="watch-links">${f.watchLinks.map(l=>`<a class="watch-btn" href="${l.url}" target="_blank">${l.platform} →</a>`).join('')}</div>
     </div>`;
@@ -287,6 +305,50 @@ document.getElementById('modal-overlay').addEventListener('click',e=>{if(e.targe
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
 document.getElementById('search').addEventListener('input',render);
 document.getElementById('sort').addEventListener('change',render);
+
+function getYouTubeSearchUrl(filmId){
+  const f=films.find(x=>x.id===filmId);
+  if(!f)return null;
+  const yt=f.watchLinks.find(l=>l.url.includes('youtube'));
+  return yt?yt.url:null;
+}
+
+function extractYouTubeId(url){
+  // Extract video ID from various YouTube URL formats
+  const m=url.match(/(?:v=|\/embed\/|youtu\.be\/)([a-zA-Z0-9_-]{11})/);
+  return m?m[1]:null;
+}
+
+function loadEmbed(filmId,startSeconds){
+  const f=films.find(x=>x.id===filmId);if(!f)return;
+  const yt=f.watchLinks.find(l=>l.url.includes('youtube'));
+  if(!yt)return;
+  const container=document.getElementById('embed-'+filmId);
+  const vid=extractYouTubeId(yt.url);
+  if(vid){
+    // Direct video ID available
+    container.innerHTML=`<div class="embed-container"><iframe src="https://www.youtube.com/embed/${vid}?start=${startSeconds}&autoplay=1" allow="autoplay;encrypted-media" allowfullscreen></iframe></div>`;
+  }else{
+    // Search URL - show embedded search results
+    const query=encodeURIComponent(f.title+' full video skateboarding');
+    container.innerHTML=`<div class="embed-container"><iframe src="https://www.youtube.com/embed?listType=search&list=${query}&start=${startSeconds}" allow="autoplay;encrypted-media" allowfullscreen></iframe></div>`;
+  }
+}
+
+function jumpToTimestamp(filmId,seconds){
+  const container=document.getElementById('embed-'+filmId);
+  if(!container)return;
+  const iframe=container.querySelector('iframe');
+  if(iframe){
+    // Reload with new start time
+    const src=iframe.src.replace(/[?&]start=\d+/,'').replace(/[?&]autoplay=\d+/,'');
+    const sep=src.includes('?')?'&':'?';
+    iframe.src=src+sep+'start='+seconds+'&autoplay=1';
+  }else{
+    loadEmbed(filmId,seconds);
+  }
+}
+
 init();
 </script>
 </body>

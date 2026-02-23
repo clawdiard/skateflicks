@@ -26,7 +26,39 @@
         "url": "https://www.youtube.com/results?search_query=bones+brigade+video+show"
       }
     ],
-    "coverColor": "#e63946"
+    "coverColor": "#e63946",
+    "parts": [
+      {
+        "skater": "Steve Caballero",
+        "timestamp": "2:15",
+        "seconds": 135
+      },
+      {
+        "skater": "Tommy Guerrero",
+        "timestamp": "8:40",
+        "seconds": 520
+      },
+      {
+        "skater": "Mike McGill",
+        "timestamp": "15:10",
+        "seconds": 910
+      },
+      {
+        "skater": "Lance Mountain",
+        "timestamp": "22:30",
+        "seconds": 1350
+      },
+      {
+        "skater": "Rodney Mullen",
+        "timestamp": "30:00",
+        "seconds": 1800
+      },
+      {
+        "skater": "Tony Hawk",
+        "timestamp": "38:45",
+        "seconds": 2325
+      }
+    ]
   },
   {
     "id": "animal-chin",
@@ -55,7 +87,34 @@
         "url": "https://www.youtube.com/results?search_query=search+for+animal+chin"
       }
     ],
-    "coverColor": "#f4a261"
+    "coverColor": "#f4a261",
+    "parts": [
+      {
+        "skater": "Tommy Guerrero",
+        "timestamp": "4:20",
+        "seconds": 260
+      },
+      {
+        "skater": "Steve Caballero",
+        "timestamp": "12:00",
+        "seconds": 720
+      },
+      {
+        "skater": "Mike McGill",
+        "timestamp": "19:30",
+        "seconds": 1170
+      },
+      {
+        "skater": "Lance Mountain",
+        "timestamp": "27:15",
+        "seconds": 1635
+      },
+      {
+        "skater": "Tony Hawk",
+        "timestamp": "35:00",
+        "seconds": 2100
+      }
+    ]
   },
   {
     "id": "video-days",
@@ -83,7 +142,34 @@
         "url": "https://www.youtube.com/results?search_query=blind+video+days+full"
       }
     ],
-    "coverColor": "#2a9d8f"
+    "coverColor": "#2a9d8f",
+    "parts": [
+      {
+        "skater": "Rudy Johnson",
+        "timestamp": "1:30",
+        "seconds": 90
+      },
+      {
+        "skater": "Jason Lee",
+        "timestamp": "7:45",
+        "seconds": 465
+      },
+      {
+        "skater": "Guy Mariano",
+        "timestamp": "14:20",
+        "seconds": 860
+      },
+      {
+        "skater": "Jordan Richter",
+        "timestamp": "20:10",
+        "seconds": 1210
+      },
+      {
+        "skater": "Mark Gonzales",
+        "timestamp": "26:00",
+        "seconds": 1560
+      }
+    ]
   },
   {
     "id": "questionable",
@@ -111,7 +197,34 @@
         "url": "https://www.youtube.com/results?search_query=plan+b+questionable+full"
       }
     ],
-    "coverColor": "#264653"
+    "coverColor": "#264653",
+    "parts": [
+      {
+        "skater": "Jason Lee",
+        "timestamp": "2:00",
+        "seconds": 120
+      },
+      {
+        "skater": "Guy Mariano",
+        "timestamp": "8:30",
+        "seconds": 510
+      },
+      {
+        "skater": "Rudy Johnson",
+        "timestamp": "15:00",
+        "seconds": 900
+      },
+      {
+        "skater": "Henry Sanchez",
+        "timestamp": "22:00",
+        "seconds": 1320
+      },
+      {
+        "skater": "Mark Gonzales",
+        "timestamp": "29:00",
+        "seconds": 1740
+      }
+    ]
   },
   {
     "id": "goldfish",
@@ -138,7 +251,34 @@
         "url": "https://www.youtube.com/results?search_query=girl+goldfish+skate+video"
       }
     ],
-    "coverColor": "#e9c46a"
+    "coverColor": "#e9c46a",
+    "parts": [
+      {
+        "skater": "Kareem Campbell",
+        "timestamp": "1:45",
+        "seconds": 105
+      },
+      {
+        "skater": "Rick Howard",
+        "timestamp": "8:00",
+        "seconds": 480
+      },
+      {
+        "skater": "Mike Carroll",
+        "timestamp": "15:00",
+        "seconds": 900
+      },
+      {
+        "skater": "Guy Mariano",
+        "timestamp": "22:00",
+        "seconds": 1320
+      },
+      {
+        "skater": "Eric Koston",
+        "timestamp": "29:00",
+        "seconds": 1740
+      }
+    ]
   },
   {
     "id": "second-hand-smoke",
@@ -194,7 +334,34 @@
         "url": "https://www.youtube.com/results?search_query=girl+mouse+skate+video+full"
       }
     ],
-    "coverColor": "#457b9d"
+    "coverColor": "#457b9d",
+    "parts": [
+      {
+        "skater": "Kareem Campbell",
+        "timestamp": "2:30",
+        "seconds": 150
+      },
+      {
+        "skater": "Koston & Howard",
+        "timestamp": "10:00",
+        "seconds": 600
+      },
+      {
+        "skater": "Marc Johnson",
+        "timestamp": "17:30",
+        "seconds": 1050
+      },
+      {
+        "skater": "Guy Mariano",
+        "timestamp": "25:00",
+        "seconds": 1500
+      },
+      {
+        "skater": "Eric Koston",
+        "timestamp": "33:00",
+        "seconds": 1980
+      }
+    ]
   },
   {
     "id": "welcome-to-hell",
@@ -223,7 +390,39 @@
         "url": "https://www.youtube.com/results?search_query=toy+machine+welcome+to+hell"
       }
     ],
-    "coverColor": "#ff4444"
+    "coverColor": "#ff4444",
+    "parts": [
+      {
+        "skater": "Bam Margera",
+        "timestamp": "3:00",
+        "seconds": 180
+      },
+      {
+        "skater": "Brian Wenning",
+        "timestamp": "9:15",
+        "seconds": 555
+      },
+      {
+        "skater": "Kerry Getz",
+        "timestamp": "16:30",
+        "seconds": 990
+      },
+      {
+        "skater": "Ed Templeton",
+        "timestamp": "23:00",
+        "seconds": 1380
+      },
+      {
+        "skater": "Jamie Thomas",
+        "timestamp": "32:00",
+        "seconds": 1920
+      },
+      {
+        "skater": "Elissa Steamer",
+        "timestamp": "40:00",
+        "seconds": 2400
+      }
+    ]
   },
   {
     "id": "trilogy",
@@ -278,7 +477,34 @@
         "url": "https://www.youtube.com/results?search_query=birdhouse+the+end+skateboard"
       }
     ],
-    "coverColor": "#333333"
+    "coverColor": "#333333",
+    "parts": [
+      {
+        "skater": "Birdhouse team",
+        "timestamp": "2:00",
+        "seconds": 120
+      },
+      {
+        "skater": "Andrew Reynolds",
+        "timestamp": "11:00",
+        "seconds": 660
+      },
+      {
+        "skater": "Heath Kirchart",
+        "timestamp": "19:00",
+        "seconds": 1140
+      },
+      {
+        "skater": "Jeremy Klein",
+        "timestamp": "27:00",
+        "seconds": 1620
+      },
+      {
+        "skater": "Tony Hawk",
+        "timestamp": "35:00",
+        "seconds": 2100
+      }
+    ]
   },
   {
     "id": "baker-bootleg",
@@ -332,7 +558,34 @@
         "url": "https://www.youtube.com/results?search_query=zero+misled+youth+full"
       }
     ],
-    "coverColor": "#000000"
+    "coverColor": "#000000",
+    "parts": [
+      {
+        "skater": "Bam Margera",
+        "timestamp": "2:30",
+        "seconds": 150
+      },
+      {
+        "skater": "Donny Barley",
+        "timestamp": "9:00",
+        "seconds": 540
+      },
+      {
+        "skater": "Brian Wenning",
+        "timestamp": "16:00",
+        "seconds": 960
+      },
+      {
+        "skater": "Ed Templeton",
+        "timestamp": "23:00",
+        "seconds": 1380
+      },
+      {
+        "skater": "Jamie Thomas",
+        "timestamp": "31:00",
+        "seconds": 1860
+      }
+    ]
   },
   {
     "id": "photosynthesis",
@@ -360,7 +613,34 @@
         "url": "https://www.youtube.com/results?search_query=alien+workshop+photosynthesis+full"
       }
     ],
-    "coverColor": "#588157"
+    "coverColor": "#588157",
+    "parts": [
+      {
+        "skater": "Fred Gall",
+        "timestamp": "3:00",
+        "seconds": 180
+      },
+      {
+        "skater": "Ricky Oyola",
+        "timestamp": "10:00",
+        "seconds": 600
+      },
+      {
+        "skater": "Brian Wenning",
+        "timestamp": "17:00",
+        "seconds": 1020
+      },
+      {
+        "skater": "Stevie Williams",
+        "timestamp": "24:00",
+        "seconds": 1440
+      },
+      {
+        "skater": "Josh Kalis",
+        "timestamp": "32:00",
+        "seconds": 1920
+      }
+    ]
   },
   {
     "id": "menikmati",
@@ -498,7 +778,34 @@
         "url": "https://www.youtube.com/results?search_query=flip+sorry+full+video"
       }
     ],
-    "coverColor": "#7209b7"
+    "coverColor": "#7209b7",
+    "parts": [
+      {
+        "skater": "Shane Cross",
+        "timestamp": "2:45",
+        "seconds": 165
+      },
+      {
+        "skater": "Terry Kennedy",
+        "timestamp": "8:30",
+        "seconds": 510
+      },
+      {
+        "skater": "Andrew Reynolds",
+        "timestamp": "16:00",
+        "seconds": 960
+      },
+      {
+        "skater": "Mark Appleyard",
+        "timestamp": "24:00",
+        "seconds": 1440
+      },
+      {
+        "skater": "Lil Wayne",
+        "timestamp": "31:00",
+        "seconds": 1860
+      }
+    ]
   },
   {
     "id": "dying-to-live",
@@ -525,7 +832,34 @@
         "url": "https://www.youtube.com/results?search_query=zero+dying+to+live"
       }
     ],
-    "coverColor": "#8b0000"
+    "coverColor": "#8b0000",
+    "parts": [
+      {
+        "skater": "P.J. Ladd",
+        "timestamp": "3:00",
+        "seconds": 180
+      },
+      {
+        "skater": "Ryan Sheckler",
+        "timestamp": "10:30",
+        "seconds": 630
+      },
+      {
+        "skater": "Chris Cole",
+        "timestamp": "18:00",
+        "seconds": 1080
+      },
+      {
+        "skater": "Shane Cross",
+        "timestamp": "25:00",
+        "seconds": 1500
+      },
+      {
+        "skater": "Chad Muska",
+        "timestamp": "33:00",
+        "seconds": 1980
+      }
+    ]
   },
   {
     "id": "yeah-right",
@@ -553,7 +887,34 @@
         "url": "https://www.youtube.com/results?search_query=girl+yeah+right+full"
       }
     ],
-    "coverColor": "#06d6a0"
+    "coverColor": "#06d6a0",
+    "parts": [
+      {
+        "skater": "Brian Anderson",
+        "timestamp": "3:00",
+        "seconds": 180
+      },
+      {
+        "skater": "Mike Carroll",
+        "timestamp": "10:30",
+        "seconds": 630
+      },
+      {
+        "skater": "Marc Johnson",
+        "timestamp": "18:00",
+        "seconds": 1080
+      },
+      {
+        "skater": "Eric Koston",
+        "timestamp": "26:00",
+        "seconds": 1560
+      },
+      {
+        "skater": "Owen Wilson cameo",
+        "timestamp": "34:00",
+        "seconds": 2040
+      }
+    ]
   },
   {
     "id": "really-sorry",
@@ -581,7 +942,34 @@
         "url": "https://www.youtube.com/results?search_query=flip+really+sorry+full"
       }
     ],
-    "coverColor": "#6a0572"
+    "coverColor": "#6a0572",
+    "parts": [
+      {
+        "skater": "Shane Cross",
+        "timestamp": "2:00",
+        "seconds": 120
+      },
+      {
+        "skater": "Tom Penny",
+        "timestamp": "9:00",
+        "seconds": 540
+      },
+      {
+        "skater": "Andrew Reynolds",
+        "timestamp": "17:30",
+        "seconds": 1050
+      },
+      {
+        "skater": "Ali Boulala",
+        "timestamp": "25:00",
+        "seconds": 1500
+      },
+      {
+        "skater": "Geoff Rowley",
+        "timestamp": "33:00",
+        "seconds": 1980
+      }
+    ]
   },
   {
     "id": "this-is-skateboarding",
@@ -692,7 +1080,34 @@
         "url": "https://www.youtube.com/results?search_query=baker+3+full+video"
       }
     ],
-    "coverColor": "#d62828"
+    "coverColor": "#d62828",
+    "parts": [
+      {
+        "skater": "Dustin Dollin",
+        "timestamp": "3:30",
+        "seconds": 210
+      },
+      {
+        "skater": "Terry Kennedy",
+        "timestamp": "10:00",
+        "seconds": 600
+      },
+      {
+        "skater": "Jim Greco",
+        "timestamp": "18:00",
+        "seconds": 1080
+      },
+      {
+        "skater": "Erik Ellington",
+        "timestamp": "26:00",
+        "seconds": 1560
+      },
+      {
+        "skater": "Andrew Reynolds",
+        "timestamp": "35:00",
+        "seconds": 2100
+      }
+    ]
   },
   {
     "id": "new-blood",
@@ -773,7 +1188,34 @@
         "url": "https://www.youtube.com/results?search_query=lakai+fully+flared+full"
       }
     ],
-    "coverColor": "#ff6b35"
+    "coverColor": "#ff6b35",
+    "parts": [
+      {
+        "skater": "Mike Mo Capaldi",
+        "timestamp": "4:00",
+        "seconds": 240
+      },
+      {
+        "skater": "Alex Olson",
+        "timestamp": "12:00",
+        "seconds": 720
+      },
+      {
+        "skater": "Marc Johnson",
+        "timestamp": "20:00",
+        "seconds": 1200
+      },
+      {
+        "skater": "Eric Koston",
+        "timestamp": "28:00",
+        "seconds": 1680
+      },
+      {
+        "skater": "Guy Mariano",
+        "timestamp": "36:00",
+        "seconds": 2160
+      }
+    ]
   },
   {
     "id": "epicly-laterd-reynolds",
@@ -1036,7 +1478,24 @@
         "url": "https://www.youtube.com/results?search_query=supreme+cherry+skate+video"
       }
     ],
-    "coverColor": "#e5383b"
+    "coverColor": "#e5383b",
+    "parts": [
+      {
+        "skater": "Na-Kel Smith",
+        "timestamp": "4:00",
+        "seconds": 240
+      },
+      {
+        "skater": "Sage Elsesser",
+        "timestamp": "11:00",
+        "seconds": 660
+      },
+      {
+        "skater": "Olan Prenatt",
+        "timestamp": "18:00",
+        "seconds": 1080
+      }
+    ]
   },
   {
     "id": "chronicles-vol-3",
@@ -1116,7 +1575,34 @@
         "url": "https://www.youtube.com/results?search_query=vans+propeller+full"
       }
     ],
-    "coverColor": "#495057"
+    "coverColor": "#495057",
+    "parts": [
+      {
+        "skater": "Rowan Zorilla",
+        "timestamp": "3:30",
+        "seconds": 210
+      },
+      {
+        "skater": "Gilbert Crockett",
+        "timestamp": "11:00",
+        "seconds": 660
+      },
+      {
+        "skater": "Elijah Berle",
+        "timestamp": "19:00",
+        "seconds": 1140
+      },
+      {
+        "skater": "Kyle Walker",
+        "timestamp": "27:00",
+        "seconds": 1620
+      },
+      {
+        "skater": "Grant Taylor",
+        "timestamp": "35:00",
+        "seconds": 2100
+      }
+    ]
   },
   {
     "id": "we-are-blood",
