@@ -5,11 +5,27 @@
     "year": 1984,
     "company": "Powell Peralta",
     "director": "Stacy Peralta",
-    "skaters": ["Tony Hawk", "Steve Caballero", "Lance Mountain", "Mike McGill", "Tommy Guerrero", "Rodney Mullen"],
+    "skaters": [
+      "Tony Hawk",
+      "Steve Caballero",
+      "Lance Mountain",
+      "Mike McGill",
+      "Tommy Guerrero",
+      "Rodney Mullen"
+    ],
     "description": "The legendary debut video from Powell Peralta's Bones Brigade team, featuring groundbreaking vert and freestyle skating that defined a generation.",
-    "genre": ["Vert", "Freestyle", "Classic"],
+    "genre": [
+      "Vert",
+      "Freestyle",
+      "Classic"
+    ],
     "rating": 5,
-    "watchLinks": [{"platform": "YouTube", "url": "https://www.youtube.com/results?search_query=bones+brigade+video+show"}],
+    "watchLinks": [
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/results?search_query=bones+brigade+video+show"
+      }
+    ],
     "coverColor": "#e63946"
   },
   {
@@ -18,11 +34,27 @@
     "year": 1987,
     "company": "Powell Peralta",
     "director": "Stacy Peralta",
-    "skaters": ["Tony Hawk", "Steve Caballero", "Lance Mountain", "Mike McGill", "Tommy Guerrero"],
+    "skaters": [
+      "Tony Hawk",
+      "Steve Caballero",
+      "Lance Mountain",
+      "Mike McGill",
+      "Tommy Guerrero"
+    ],
     "description": "A narrative-driven skate video following the Bones Brigade on a quest to find the mythical Animal Chin. Revolutionized what a skate video could be.",
-    "genre": ["Vert", "Street", "Narrative", "Classic"],
+    "genre": [
+      "Vert",
+      "Street",
+      "Narrative",
+      "Classic"
+    ],
     "rating": 5,
-    "watchLinks": [{"platform": "YouTube", "url": "https://www.youtube.com/results?search_query=search+for+animal+chin"}],
+    "watchLinks": [
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/results?search_query=search+for+animal+chin"
+      }
+    ],
     "coverColor": "#f4a261"
   },
   {
@@ -31,25 +63,27 @@
     "year": 1991,
     "company": "Blind Skateboards",
     "director": "Spike Jonze",
-    "skaters": ["Mark Gonzales", "Jason Lee", "Guy Mariano", "Rudy Johnson", "Jordan Richter"],
+    "skaters": [
+      "Mark Gonzales",
+      "Jason Lee",
+      "Guy Mariano",
+      "Rudy Johnson",
+      "Jordan Richter"
+    ],
     "description": "Directed by Spike Jonze before his Hollywood career. Mark Gonzales' part is considered one of the most influential video parts of all time.",
-    "genre": ["Street", "Art House", "Classic"],
+    "genre": [
+      "Street",
+      "Art House",
+      "Classic"
+    ],
     "rating": 5,
-    "watchLinks": [{"platform": "YouTube", "url": "https://www.youtube.com/results?search_query=blind+video+days+full"}],
+    "watchLinks": [
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/results?search_query=blind+video+days+full"
+      }
+    ],
     "coverColor": "#2a9d8f"
-  },
-  {
-    "id": "goldfish",
-    "title": "Goldfish",
-    "year": 1993,
-    "company": "Girl Skateboards",
-    "director": "Spike Jonze",
-    "skaters": ["Rick Howard", "Mike Carroll", "Jeron Wilson", "Rudy Johnson", "Guy Mariano"],
-    "description": "Girl Skateboards' debut video, another Spike Jonze classic that helped establish the company as a cultural force in skating.",
-    "genre": ["Street", "Classic"],
-    "rating": 4,
-    "watchLinks": [{"platform": "YouTube", "url": "https://www.youtube.com/results?search_query=girl+goldfish+skate+video"}],
-    "coverColor": "#e9c46a"
   },
   {
     "id": "questionable",
@@ -57,77 +91,82 @@
     "year": 1992,
     "company": "Plan B",
     "director": "Plan B Team",
-    "skaters": ["Pat Duffy", "Rodney Mullen", "Rick Howard", "Mike Carroll", "Colin McKay"],
+    "skaters": [
+      "Pat Duffy",
+      "Rodney Mullen",
+      "Rick Howard",
+      "Mike Carroll",
+      "Colin McKay"
+    ],
     "description": "Plan B's groundbreaking debut. Rodney Mullen's part redefined street skating and Pat Duffy's raw power stunned the world.",
-    "genre": ["Street", "Technical", "Classic"],
+    "genre": [
+      "Street",
+      "Technical",
+      "Classic"
+    ],
     "rating": 5,
-    "watchLinks": [{"platform": "YouTube", "url": "https://www.youtube.com/results?search_query=plan+b+questionable+full"}],
+    "watchLinks": [
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/results?search_query=plan+b+questionable+full"
+      }
+    ],
     "coverColor": "#264653"
   },
   {
-    "id": "yeah-right",
-    "title": "Yeah Right!",
-    "year": 2003,
+    "id": "goldfish",
+    "title": "Goldfish",
+    "year": 1993,
     "company": "Girl Skateboards",
-    "director": "Spike Jonze / Ty Evans",
-    "skaters": ["Eric Koston", "Mike Carroll", "Rick Howard", "Brandon Biebel", "Owen Wilson"],
-    "description": "A revolutionary skate film featuring the invisible board trick using CGI. Combined humor, creativity, and incredible skating.",
-    "genre": ["Street", "Comedy", "Experimental"],
-    "rating": 5,
-    "watchLinks": [{"platform": "YouTube", "url": "https://www.youtube.com/results?search_query=girl+yeah+right+full"}],
-    "coverColor": "#06d6a0"
-  },
-  {
-    "id": "baker3",
-    "title": "Baker 3",
-    "year": 2005,
-    "company": "Baker Skateboards",
-    "director": "Beagle / Spike Jonze",
-    "skaters": ["Andrew Reynolds", "Jim Greco", "Dustin Dollin", "Bryan Herman", "Terry Kennedy"],
-    "description": "One of the most hyped and celebrated skate videos ever. Andrew Reynolds' ender part is legendary. Raw, gnarly, no-holds-barred skating.",
-    "genre": ["Street", "Gnarly", "Raw"],
-    "rating": 5,
-    "watchLinks": [{"platform": "YouTube", "url": "https://www.youtube.com/results?search_query=baker+3+full+video"}],
-    "coverColor": "#d62828"
-  },
-  {
-    "id": "fully-flared",
-    "title": "Fully Flared",
-    "year": 2007,
-    "company": "Lakai Footwear",
-    "director": "Ty Evans / Spike Jonze",
-    "skaters": ["Mike Mo Capaldi", "Marc Johnson", "Guy Mariano", "Eric Koston", "Mike Carroll"],
-    "description": "The most cinematic skate video ever made. The explosive intro sequence and Guy Mariano's comeback part are unforgettable.",
-    "genre": ["Street", "Cinematic", "Epic"],
-    "rating": 5,
-    "watchLinks": [{"platform": "YouTube", "url": "https://www.youtube.com/results?search_query=lakai+fully+flared+full"}],
-    "coverColor": "#ff6b35"
-  },
-  {
-    "id": "sorry",
-    "title": "Sorry",
-    "year": 2002,
-    "company": "Flip Skateboards",
-    "director": "Jeremy Fox",
-    "skaters": ["Geoff Rowley", "Tom Penny", "Arto Saari", "Mark Appleyard", "Ali Boulala"],
-    "description": "Flip's landmark video. Ali Boulala's Lyon 25-stair attempt became one of skating's most legendary moments.",
-    "genre": ["Street", "Gnarly", "International"],
-    "rating": 5,
-    "watchLinks": [{"platform": "YouTube", "url": "https://www.youtube.com/results?search_query=flip+sorry+full+video"}],
-    "coverColor": "#7209b7"
-  },
-  {
-    "id": "misled-youth",
-    "title": "Misled Youth",
-    "year": 1999,
-    "company": "Zero Skateboards",
-    "director": "Jamie Thomas",
-    "skaters": ["Jamie Thomas", "Chris Cole", "Tommy Sandoval", "John Rattray", "Adrian Lopez"],
-    "description": "Zero's brutal, fearless skating. Jamie Thomas' Leap of Faith drop became the stuff of legend.",
-    "genre": ["Street", "Hardcore", "Raw"],
+    "director": "Spike Jonze",
+    "skaters": [
+      "Rick Howard",
+      "Mike Carroll",
+      "Jeron Wilson",
+      "Rudy Johnson",
+      "Guy Mariano"
+    ],
+    "description": "Girl Skateboards' debut video, another Spike Jonze classic that helped establish the company as a cultural force in skating.",
+    "genre": [
+      "Street",
+      "Classic"
+    ],
     "rating": 4,
-    "watchLinks": [{"platform": "YouTube", "url": "https://www.youtube.com/results?search_query=zero+misled+youth+full"}],
-    "coverColor": "#000000"
+    "watchLinks": [
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/results?search_query=girl+goldfish+skate+video"
+      }
+    ],
+    "coverColor": "#e9c46a"
+  },
+  {
+    "id": "second-hand-smoke",
+    "title": "Second Hand Smoke",
+    "year": 1994,
+    "company": "Alien Workshop",
+    "director": "Alien Workshop / Memory Screen",
+    "skaters": [
+      "Rob Dyrdek",
+      "Josh Kalis",
+      "Carter LeBlanc",
+      "Mikey Taylor",
+      "Anthony Pappalardo"
+    ],
+    "description": "Alien Workshop's dark, atmospheric art-house approach to skate video, blending experimental visuals with raw East Coast street skating.",
+    "genre": [
+      "Street",
+      "Art",
+      "Experimental"
+    ],
+    "rating": 4,
+    "watchLinks": [
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/results?search_query=alien+workshop+second+hand+smoke"
+      }
+    ],
+    "coverColor": "#556b2f"
   },
   {
     "id": "mouse",
@@ -135,25 +174,165 @@
     "year": 1996,
     "company": "Girl Skateboards",
     "director": "Spike Jonze",
-    "skaters": ["Eric Koston", "Mike Carroll", "Rick Howard", "Guy Mariano", "Jeron Wilson"],
+    "skaters": [
+      "Eric Koston",
+      "Mike Carroll",
+      "Rick Howard",
+      "Guy Mariano",
+      "Jeron Wilson"
+    ],
     "description": "Girl's sophomore effort. Eric Koston's Love Park part is a masterpiece of technical street skating.",
-    "genre": ["Street", "Technical", "Classic"],
+    "genre": [
+      "Street",
+      "Technical",
+      "Classic"
+    ],
     "rating": 5,
-    "watchLinks": [{"platform": "YouTube", "url": "https://www.youtube.com/results?search_query=girl+mouse+skate+video+full"}],
+    "watchLinks": [
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/results?search_query=girl+mouse+skate+video+full"
+      }
+    ],
     "coverColor": "#457b9d"
   },
   {
-    "id": "really-sorry",
-    "title": "Really Sorry",
-    "year": 2003,
-    "company": "Flip Skateboards",
-    "director": "Jeremy Fox",
-    "skaters": ["Geoff Rowley", "Tom Penny", "Arto Saari", "Mark Appleyard", "Bastien Salabanzi"],
-    "description": "The follow-up to Sorry, continuing Flip's tradition of international gnarly skating with incredible production value.",
-    "genre": ["Street", "International", "Gnarly"],
+    "id": "welcome-to-hell",
+    "title": "Welcome to Hell",
+    "year": 1996,
+    "company": "Toy Machine",
+    "director": "Ed Templeton / Jamie Tancowny",
+    "skaters": [
+      "Ed Templeton",
+      "Jamie Thomas",
+      "Brian Anderson",
+      "Elissa Steamer",
+      "Donny Barley",
+      "Mike Maldonado"
+    ],
+    "description": "Toy Machine's raw and unfiltered debut full-length, launching Jamie Thomas into superstardom with one of the gnarliest enders ever filmed.",
+    "genre": [
+      "Street",
+      "Punk",
+      "Classic"
+    ],
+    "rating": 5,
+    "watchLinks": [
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/results?search_query=toy+machine+welcome+to+hell"
+      }
+    ],
+    "coverColor": "#ff4444"
+  },
+  {
+    "id": "trilogy",
+    "title": "Trilogy",
+    "year": 1996,
+    "company": "Transworld Skateboarding",
+    "director": "Transworld",
+    "skaters": [
+      "Pat Duffy",
+      "Eric Koston",
+      "Andrew Reynolds",
+      "Kareem Campbell",
+      "Guy Mariano"
+    ],
+    "description": "A pivotal Transworld video bridging eras, packed with iconic street parts from the mid-90s California scene.",
+    "genre": [
+      "Street",
+      "Classic"
+    ],
     "rating": 4,
-    "watchLinks": [{"platform": "YouTube", "url": "https://www.youtube.com/results?search_query=flip+really+sorry+full"}],
-    "coverColor": "#6a0572"
+    "watchLinks": [
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/results?search_query=transworld+trilogy+skateboarding"
+      }
+    ],
+    "coverColor": "#4488cc"
+  },
+  {
+    "id": "the-end",
+    "title": "The End",
+    "year": 1998,
+    "company": "Birdhouse",
+    "director": "Jamie Mosberg",
+    "skaters": [
+      "Tony Hawk",
+      "Andrew Reynolds",
+      "Heath Kirchart",
+      "Jeremy Klein",
+      "Bucky Lasek"
+    ],
+    "description": "Birdhouse's ambitious apocalyptic-themed video featuring Tony Hawk's legendary loop attempt and Andrew Reynolds' breakout part.",
+    "genre": [
+      "Street",
+      "Vert",
+      "Narrative"
+    ],
+    "rating": 4,
+    "watchLinks": [
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/results?search_query=birdhouse+the+end+skateboard"
+      }
+    ],
+    "coverColor": "#333333"
+  },
+  {
+    "id": "baker-bootleg",
+    "title": "Baker Bootleg",
+    "year": 1998,
+    "company": "Baker Skateboards",
+    "director": "Andrew Reynolds / Beagle",
+    "skaters": [
+      "Andrew Reynolds",
+      "Jim Greco",
+      "Erik Ellington"
+    ],
+    "description": "The scrappy Baker origin story \u2014 filmed on handycams with raw energy that launched a skateboarding empire.",
+    "genre": [
+      "Street",
+      "Lo-Fi",
+      "Classic"
+    ],
+    "rating": 4,
+    "watchLinks": [
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/results?search_query=baker+bootleg+skateboard"
+      }
+    ],
+    "coverColor": "#cc0033"
+  },
+  {
+    "id": "misled-youth",
+    "title": "Misled Youth",
+    "year": 1999,
+    "company": "Zero Skateboards",
+    "director": "Jamie Thomas",
+    "skaters": [
+      "Jamie Thomas",
+      "Chris Cole",
+      "Tommy Sandoval",
+      "John Rattray",
+      "Adrian Lopez"
+    ],
+    "description": "Zero's brutal, fearless skating. Jamie Thomas' Leap of Faith drop became the stuff of legend.",
+    "genre": [
+      "Street",
+      "Hardcore",
+      "Raw"
+    ],
+    "rating": 4,
+    "watchLinks": [
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/results?search_query=zero+misled+youth+full"
+      }
+    ],
+    "coverColor": "#000000"
   },
   {
     "id": "photosynthesis",
@@ -161,25 +340,491 @@
     "year": 2000,
     "company": "Alien Workshop",
     "director": "Joe Castrucci / Mike Hill",
-    "skaters": ["Josh Kalis", "Rob Dyrdek", "Anthony Pappalardo", "Heath Kirchart", "Jason Dill"],
+    "skaters": [
+      "Josh Kalis",
+      "Rob Dyrdek",
+      "Anthony Pappalardo",
+      "Heath Kirchart",
+      "Jason Dill"
+    ],
     "description": "Alien Workshop's artistic masterpiece. Blended abstract visuals with raw skating in a way nobody had done before.",
-    "genre": ["Street", "Art House", "Experimental"],
+    "genre": [
+      "Street",
+      "Art House",
+      "Experimental"
+    ],
     "rating": 5,
-    "watchLinks": [{"platform": "YouTube", "url": "https://www.youtube.com/results?search_query=alien+workshop+photosynthesis+full"}],
+    "watchLinks": [
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/results?search_query=alien+workshop+photosynthesis+full"
+      }
+    ],
     "coverColor": "#588157"
   },
   {
     "id": "menikmati",
     "title": "Menikmati",
     "year": 2000,
-    "company": "éS Footwear",
+    "company": "\u00e9S Footwear",
     "director": "Fred Mortagne / Ty Evans",
-    "skaters": ["Eric Koston", "Tom Penny", "Arto Saari", "PJ Ladd", "Ronnie Creager"],
+    "skaters": [
+      "Eric Koston",
+      "Tom Penny",
+      "Arto Saari",
+      "PJ Ladd",
+      "Ronnie Creager"
+    ],
     "description": "French-filmed masterpiece with some of the most beautifully shot skateboarding ever captured. Tom Penny's rare footage is golden.",
-    "genre": ["Street", "Cinematic", "International"],
+    "genre": [
+      "Street",
+      "Cinematic",
+      "International"
+    ],
     "rating": 5,
-    "watchLinks": [{"platform": "YouTube", "url": "https://www.youtube.com/results?search_query=es+menikmati+full"}],
+    "watchLinks": [
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/results?search_query=es+menikmati+full"
+      }
+    ],
     "coverColor": "#bc6c25"
+  },
+  {
+    "id": "bag-of-suck",
+    "title": "Bag of Suck",
+    "year": 2000,
+    "company": "Emerica",
+    "director": "Jon Minor",
+    "skaters": [
+      "Andrew Reynolds",
+      "Bryan Herman",
+      "Leo Romero",
+      "Jerry Hsu",
+      "Brandon Westgate"
+    ],
+    "description": "Emerica's hard-hitting team video showcasing some of the gnarliest street skating of the early 2000s.",
+    "genre": [
+      "Street",
+      "Hardcore"
+    ],
+    "rating": 4,
+    "watchLinks": [
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/results?search_query=emerica+bag+of+suck"
+      }
+    ],
+    "coverColor": "#1a1a1a"
+  },
+  {
+    "id": "baker-2g",
+    "title": "Baker 2G",
+    "year": 2000,
+    "company": "Baker Skateboards",
+    "director": "Beagle / Sturt",
+    "skaters": [
+      "Andrew Reynolds",
+      "Erik Ellington",
+      "Terry Kennedy",
+      "Dustin Dollin",
+      "Jim Greco"
+    ],
+    "description": "Baker's raw debut established the brand's identity \u2014 gritty street skating, punk attitude, and zero pretension.",
+    "genre": [
+      "Street",
+      "Punk",
+      "Classic"
+    ],
+    "rating": 5,
+    "watchLinks": [
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/results?search_query=baker+2g+skateboard"
+      }
+    ],
+    "coverColor": "#ff0000"
+  },
+  {
+    "id": "sight-unseen",
+    "title": "Sight Unseen",
+    "year": 2001,
+    "company": "Transworld Skateboarding",
+    "director": "Greg Hunt / Jon Holland",
+    "skaters": [
+      "Paul Rodriguez",
+      "Ryan Smith",
+      "Marc Johnson",
+      "Danny Way",
+      "Arto Saari"
+    ],
+    "description": "A defining Transworld video introducing a young P-Rod to the world and capturing street skating's technical evolution.",
+    "genre": [
+      "Street",
+      "Classic"
+    ],
+    "rating": 4,
+    "watchLinks": [
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/results?search_query=transworld+sight+unseen"
+      }
+    ],
+    "coverColor": "#4169e1"
+  },
+  {
+    "id": "sorry",
+    "title": "Sorry",
+    "year": 2002,
+    "company": "Flip Skateboards",
+    "director": "Jeremy Fox",
+    "skaters": [
+      "Geoff Rowley",
+      "Tom Penny",
+      "Arto Saari",
+      "Mark Appleyard",
+      "Ali Boulala"
+    ],
+    "description": "Flip's landmark video. Ali Boulala's Lyon 25-stair attempt became one of skating's most legendary moments.",
+    "genre": [
+      "Street",
+      "Gnarly",
+      "International"
+    ],
+    "rating": 5,
+    "watchLinks": [
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/results?search_query=flip+sorry+full+video"
+      }
+    ],
+    "coverColor": "#7209b7"
+  },
+  {
+    "id": "dying-to-live",
+    "title": "Dying to Live",
+    "year": 2002,
+    "company": "Zero Skateboards",
+    "director": "Jamie Thomas",
+    "skaters": [
+      "Jamie Thomas",
+      "Chris Cole",
+      "John Rattray",
+      "Tommy Sandoval",
+      "James Brockman"
+    ],
+    "description": "Zero's heavy-hitting follow-up to Misled Youth, raising the bar for hammers and stair counts in street skating.",
+    "genre": [
+      "Street",
+      "Hardcore"
+    ],
+    "rating": 5,
+    "watchLinks": [
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/results?search_query=zero+dying+to+live"
+      }
+    ],
+    "coverColor": "#8b0000"
+  },
+  {
+    "id": "yeah-right",
+    "title": "Yeah Right!",
+    "year": 2003,
+    "company": "Girl Skateboards",
+    "director": "Spike Jonze / Ty Evans",
+    "skaters": [
+      "Eric Koston",
+      "Mike Carroll",
+      "Rick Howard",
+      "Brandon Biebel",
+      "Owen Wilson"
+    ],
+    "description": "A revolutionary skate film featuring the invisible board trick using CGI. Combined humor, creativity, and incredible skating.",
+    "genre": [
+      "Street",
+      "Comedy",
+      "Experimental"
+    ],
+    "rating": 5,
+    "watchLinks": [
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/results?search_query=girl+yeah+right+full"
+      }
+    ],
+    "coverColor": "#06d6a0"
+  },
+  {
+    "id": "really-sorry",
+    "title": "Really Sorry",
+    "year": 2003,
+    "company": "Flip Skateboards",
+    "director": "Jeremy Fox",
+    "skaters": [
+      "Geoff Rowley",
+      "Tom Penny",
+      "Arto Saari",
+      "Mark Appleyard",
+      "Bastien Salabanzi"
+    ],
+    "description": "The follow-up to Sorry, continuing Flip's tradition of international gnarly skating with incredible production value.",
+    "genre": [
+      "Street",
+      "International",
+      "Gnarly"
+    ],
+    "rating": 4,
+    "watchLinks": [
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/results?search_query=flip+really+sorry+full"
+      }
+    ],
+    "coverColor": "#6a0572"
+  },
+  {
+    "id": "this-is-skateboarding",
+    "title": "This Is Skateboarding",
+    "year": 2003,
+    "company": "Emerica",
+    "director": "Jon Minor",
+    "skaters": [
+      "Andrew Reynolds",
+      "Bryan Herman",
+      "Heath Kirchart",
+      "Jerry Hsu",
+      "Ed Templeton"
+    ],
+    "description": "Emerica's definitive statement \u2014 raw, powerful street skating with Heath Kirchart's jaw-dropping closing part.",
+    "genre": [
+      "Street",
+      "Classic"
+    ],
+    "rating": 5,
+    "watchLinks": [
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/results?search_query=emerica+this+is+skateboarding"
+      }
+    ],
+    "coverColor": "#2f4f4f"
+  },
+  {
+    "id": "king-of-the-road-2004",
+    "title": "King of the Road 2004",
+    "year": 2004,
+    "company": "Thrasher Magazine",
+    "director": "Thrasher",
+    "skaters": [
+      "Various Teams",
+      "Anti Hero",
+      "Toy Machine",
+      "Baker",
+      "Element"
+    ],
+    "description": "Thrasher's iconic cross-country challenge series where teams compete in outrageous dares, tricks, and road trip chaos.",
+    "genre": [
+      "Competition",
+      "Road Trip",
+      "Comedy"
+    ],
+    "rating": 4,
+    "watchLinks": [
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/results?search_query=thrasher+king+of+the+road+2004"
+      }
+    ],
+    "coverColor": "#ff6600"
+  },
+  {
+    "id": "hot-chocolate",
+    "title": "Hot Chocolate",
+    "year": 2004,
+    "company": "Chocolate Skateboards",
+    "director": "Spike Jonze / Ty Evans",
+    "skaters": [
+      "Marc Johnson",
+      "Kenny Anderson",
+      "Gino Iannucci",
+      "Jesus Fernandez",
+      "Justin Eldridge"
+    ],
+    "description": "Chocolate's tour de force featuring Gino Iannucci's legendary part and the brand's signature mix of art and skating.",
+    "genre": [
+      "Street",
+      "Art",
+      "Classic"
+    ],
+    "rating": 5,
+    "watchLinks": [
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/results?search_query=chocolate+hot+chocolate+skate"
+      }
+    ],
+    "coverColor": "#8b4513"
+  },
+  {
+    "id": "baker3",
+    "title": "Baker 3",
+    "year": 2005,
+    "company": "Baker Skateboards",
+    "director": "Beagle / Spike Jonze",
+    "skaters": [
+      "Andrew Reynolds",
+      "Jim Greco",
+      "Dustin Dollin",
+      "Bryan Herman",
+      "Terry Kennedy"
+    ],
+    "description": "One of the most hyped and celebrated skate videos ever. Andrew Reynolds' ender part is legendary. Raw, gnarly, no-holds-barred skating.",
+    "genre": [
+      "Street",
+      "Gnarly",
+      "Raw"
+    ],
+    "rating": 5,
+    "watchLinks": [
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/results?search_query=baker+3+full+video"
+      }
+    ],
+    "coverColor": "#d62828"
+  },
+  {
+    "id": "new-blood",
+    "title": "New Blood",
+    "year": 2005,
+    "company": "Zero Skateboards",
+    "director": "Jamie Thomas",
+    "skaters": [
+      "Chris Cole",
+      "Tommy Sandoval",
+      "Dane Burman",
+      "James Brockman",
+      "Elissa Steamer"
+    ],
+    "description": "Zero's next generation video maintaining the brand's tradition of high-consequence street skating.",
+    "genre": [
+      "Street",
+      "Hardcore"
+    ],
+    "rating": 4,
+    "watchLinks": [
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/results?search_query=zero+new+blood+skateboarding"
+      }
+    ],
+    "coverColor": "#cc0000"
+  },
+  {
+    "id": "first-love",
+    "title": "First Love",
+    "year": 2005,
+    "company": "Transworld Skateboarding",
+    "director": "Greg Hunt / Jon Holland",
+    "skaters": [
+      "Marc Johnson",
+      "Paul Rodriguez",
+      "Danny Way",
+      "Chris Haslam"
+    ],
+    "description": "Transworld's love letter to skateboarding featuring incredible filming and MJ's career-best part.",
+    "genre": [
+      "Street",
+      "Cinematic"
+    ],
+    "rating": 4,
+    "watchLinks": [
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/results?search_query=transworld+first+love+skateboarding"
+      }
+    ],
+    "coverColor": "#dc143c"
+  },
+  {
+    "id": "fully-flared",
+    "title": "Fully Flared",
+    "year": 2007,
+    "company": "Lakai Footwear",
+    "director": "Ty Evans / Spike Jonze",
+    "skaters": [
+      "Mike Mo Capaldi",
+      "Marc Johnson",
+      "Guy Mariano",
+      "Eric Koston",
+      "Mike Carroll"
+    ],
+    "description": "The most cinematic skate video ever made. The explosive intro sequence and Guy Mariano's comeback part are unforgettable.",
+    "genre": [
+      "Street",
+      "Cinematic",
+      "Epic"
+    ],
+    "rating": 5,
+    "watchLinks": [
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/results?search_query=lakai+fully+flared+full"
+      }
+    ],
+    "coverColor": "#ff6b35"
+  },
+  {
+    "id": "epicly-laterd-reynolds",
+    "title": "Epicly Later'd: Andrew Reynolds",
+    "year": 2008,
+    "company": "VICE / VBS.tv",
+    "director": "Patrick O'Dell",
+    "skaters": [
+      "Andrew Reynolds"
+    ],
+    "description": "Deep-dive documentary episode following The Boss from Baker, exploring his journey from Florida am to skate legend.",
+    "genre": [
+      "Documentary",
+      "Biography"
+    ],
+    "rating": 5,
+    "watchLinks": [
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/results?search_query=epicly+laterd+andrew+reynolds"
+      }
+    ],
+    "coverColor": "#8b4513"
+  },
+  {
+    "id": "baker-has-a-deathwish",
+    "title": "Baker Has a Deathwish",
+    "year": 2008,
+    "company": "Baker / Deathwish",
+    "director": "Beagle",
+    "skaters": [
+      "Andrew Reynolds",
+      "Jim Greco",
+      "Neen Williams",
+      "Lizard King",
+      "Antwuan Dixon"
+    ],
+    "description": "The joint Baker/Deathwish video featuring some of the most reckless and fearless street skating ever documented.",
+    "genre": [
+      "Street",
+      "Hardcore",
+      "Punk"
+    ],
+    "rating": 4,
+    "watchLinks": [
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/results?search_query=baker+has+a+deathwish"
+      }
+    ],
+    "coverColor": "#990000"
   },
   {
     "id": "mindfield",
@@ -187,12 +832,183 @@
     "year": 2009,
     "company": "Alien Workshop",
     "director": "Greg Hunt",
-    "skaters": ["Jason Dill", "Dylan Rieder", "Gilbert Crockett", "Tyler Bledsoe", "Jake Johnson"],
+    "skaters": [
+      "Jason Dill",
+      "Dylan Rieder",
+      "Gilbert Crockett",
+      "Tyler Bledsoe",
+      "Jake Johnson"
+    ],
     "description": "Alien Workshop's artistic follow-up to Photosynthesis. Dylan Rieder's part launched him into superstardom.",
-    "genre": ["Street", "Art House", "Modern"],
+    "genre": [
+      "Street",
+      "Art House",
+      "Modern"
+    ],
     "rating": 5,
-    "watchLinks": [{"platform": "YouTube", "url": "https://www.youtube.com/results?search_query=alien+workshop+mindfield+full"}],
+    "watchLinks": [
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/results?search_query=alien+workshop+mindfield+full"
+      }
+    ],
     "coverColor": "#3a0ca3"
+  },
+  {
+    "id": "epicly-laterd-gonz",
+    "title": "Epicly Later'd: Mark Gonzales",
+    "year": 2009,
+    "company": "VICE / VBS.tv",
+    "director": "Patrick O'Dell",
+    "skaters": [
+      "Mark Gonzales"
+    ],
+    "description": "A portrait of the godfather of street skating \u2014 artist, poet, and eternal innovator Mark Gonzales.",
+    "genre": [
+      "Documentary",
+      "Biography",
+      "Art"
+    ],
+    "rating": 5,
+    "watchLinks": [
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/results?search_query=epicly+laterd+mark+gonzales"
+      }
+    ],
+    "coverColor": "#9932cc"
+  },
+  {
+    "id": "extremely-sorry",
+    "title": "Extremely Sorry",
+    "year": 2009,
+    "company": "Flip Skateboards",
+    "director": "Ewan Bowman",
+    "skaters": [
+      "Arto Saari",
+      "Geoff Rowley",
+      "David Gonzalez",
+      "Louie Lopez",
+      "Luan Oliveira"
+    ],
+    "description": "Flip's third installment continued the Sorry legacy with global cinematography and David Gonzalez's explosive debut.",
+    "genre": [
+      "Street",
+      "Global",
+      "Cinematic"
+    ],
+    "rating": 4,
+    "watchLinks": [
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/results?search_query=flip+extremely+sorry"
+      }
+    ],
+    "coverColor": "#ff8c00"
+  },
+  {
+    "id": "epicly-laterd-cardiel",
+    "title": "Epicly Later'd: John Cardiel",
+    "year": 2010,
+    "company": "VICE / VBS.tv",
+    "director": "Patrick O'Dell",
+    "skaters": [
+      "John Cardiel"
+    ],
+    "description": "The story of Anti Hero's fearless rider, his devastating spinal injury, and his relentless spirit to keep skating.",
+    "genre": [
+      "Documentary",
+      "Biography"
+    ],
+    "rating": 5,
+    "watchLinks": [
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/results?search_query=epicly+laterd+john+cardiel"
+      }
+    ],
+    "coverColor": "#b22222"
+  },
+  {
+    "id": "stay-gold",
+    "title": "Stay Gold",
+    "year": 2010,
+    "company": "Emerica",
+    "director": "Jon Minor",
+    "skaters": [
+      "Andrew Reynolds",
+      "Bryan Herman",
+      "Jerry Hsu",
+      "Brandon Westgate",
+      "Leo Romero"
+    ],
+    "description": "Emerica's magnum opus \u2014 years in the making, with career-defining parts and a legendary B-sides release.",
+    "genre": [
+      "Street",
+      "Epic"
+    ],
+    "rating": 5,
+    "watchLinks": [
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/results?search_query=emerica+stay+gold"
+      }
+    ],
+    "coverColor": "#daa520"
+  },
+  {
+    "id": "pretty-sweet",
+    "title": "Pretty Sweet",
+    "year": 2012,
+    "company": "Girl / Chocolate",
+    "director": "Ty Evans / Spike Jonze",
+    "skaters": [
+      "Guy Mariano",
+      "Eric Koston",
+      "Mike Mo Capaldi",
+      "Sean Malto",
+      "Rick Howard"
+    ],
+    "description": "Girl and Chocolate's cinematic joint video co-directed by Spike Jonze, blending Hollywood production with core skateboarding.",
+    "genre": [
+      "Street",
+      "Cinematic"
+    ],
+    "rating": 4,
+    "watchLinks": [
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/results?search_query=girl+chocolate+pretty+sweet"
+      }
+    ],
+    "coverColor": "#ff69b4"
+  },
+  {
+    "id": "bake-and-destroy",
+    "title": "Bake and Destroy",
+    "year": 2012,
+    "company": "Baker Skateboards",
+    "director": "Beagle",
+    "skaters": [
+      "Andrew Reynolds",
+      "Dustin Dollin",
+      "Bryan Herman",
+      "Dee Ostrander",
+      "Figgy"
+    ],
+    "description": "Baker's continuation of chaotic energy with Figgy's breakout part and the brand's signature no-holds-barred approach.",
+    "genre": [
+      "Street",
+      "Punk"
+    ],
+    "rating": 4,
+    "watchLinks": [
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/results?search_query=baker+bake+and+destroy"
+      }
+    ],
+    "coverColor": "#ff3300"
   },
   {
     "id": "cherry",
@@ -200,12 +1016,79 @@
     "year": 2014,
     "company": "Supreme",
     "director": "William Strobeck",
-    "skaters": ["Jason Dill", "Mark Gonzales", "Sage Elsesser", "Sean Pablo", "Tyshawn Jones"],
+    "skaters": [
+      "Jason Dill",
+      "Mark Gonzales",
+      "Sage Elsesser",
+      "Sean Pablo",
+      "Tyshawn Jones"
+    ],
     "description": "Supreme's lo-fi love letter to New York City skating. Gritty, stylish, and dripping with NYC culture.",
-    "genre": ["Street", "NYC", "Lo-Fi"],
+    "genre": [
+      "Street",
+      "NYC",
+      "Lo-Fi"
+    ],
     "rating": 4,
-    "watchLinks": [{"platform": "YouTube", "url": "https://www.youtube.com/results?search_query=supreme+cherry+skate+video"}],
+    "watchLinks": [
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/results?search_query=supreme+cherry+skate+video"
+      }
+    ],
     "coverColor": "#e5383b"
+  },
+  {
+    "id": "chronicles-vol-3",
+    "title": "Chronicles Vol. 3",
+    "year": 2014,
+    "company": "Nike SB",
+    "director": "Nike SB",
+    "skaters": [
+      "Paul Rodriguez",
+      "Eric Koston",
+      "Shane O'Neill",
+      "Theotis Beasley"
+    ],
+    "description": "Nike SB's ongoing series capturing pro team riders across global sessions and skate trips.",
+    "genre": [
+      "Street",
+      "Tour"
+    ],
+    "rating": 3,
+    "watchLinks": [
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/results?search_query=nike+sb+chronicles+vol+3"
+      }
+    ],
+    "coverColor": "#ff7f50"
+  },
+  {
+    "id": "til-the-end",
+    "title": "'Til the End",
+    "year": 2014,
+    "company": "Element Skateboards",
+    "director": "Ty Evans / Dan Wolfe",
+    "skaters": [
+      "Nyjah Huston",
+      "Mason Silva",
+      "Evan Smith",
+      "Chad Tim Tim"
+    ],
+    "description": "Element's cinematic full-length with Nyjah Huston's jaw-dropping closing part.",
+    "genre": [
+      "Street",
+      "Cinematic"
+    ],
+    "rating": 4,
+    "watchLinks": [
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/results?search_query=element+til+the+end"
+      }
+    ],
+    "coverColor": "#228b22"
   },
   {
     "id": "propeller",
@@ -213,38 +1096,27 @@
     "year": 2015,
     "company": "Vans",
     "director": "Greg Hunt",
-    "skaters": ["Gilbert Crockett", "Rowan Zorilla", "Kyle Walker", "Elijah Berle", "Geoff Rowley"],
+    "skaters": [
+      "Gilbert Crockett",
+      "Rowan Zorilla",
+      "Kyle Walker",
+      "Elijah Berle",
+      "Geoff Rowley"
+    ],
     "description": "Vans' landmark full-length video. Rowan Zorilla's part was a game-changer that earned him SOTY.",
-    "genre": ["Street", "Transition", "Modern"],
+    "genre": [
+      "Street",
+      "Transition",
+      "Modern"
+    ],
     "rating": 5,
-    "watchLinks": [{"platform": "YouTube", "url": "https://www.youtube.com/results?search_query=vans+propeller+full"}],
+    "watchLinks": [
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/results?search_query=vans+propeller+full"
+      }
+    ],
     "coverColor": "#495057"
-  },
-  {
-    "id": "blessed",
-    "title": "Blessed",
-    "year": 2018,
-    "company": "Supreme",
-    "director": "William Strobeck",
-    "skaters": ["Tyshawn Jones", "Na-Kel Smith", "Sage Elsesser", "Ben Kadow", "Sean Pablo"],
-    "description": "Supreme's follow-up to Cherry. Tyshawn Jones' part cemented him as one of the best street skaters alive.",
-    "genre": ["Street", "NYC", "Modern"],
-    "rating": 4,
-    "watchLinks": [{"platform": "YouTube", "url": "https://www.youtube.com/results?search_query=supreme+blessed+skate+video"}],
-    "coverColor": "#c1121f"
-  },
-  {
-    "id": "purple-playgrounds",
-    "title": "Purple Playgrounds",
-    "year": 2024,
-    "company": "April Skateboards",
-    "director": "Shane O'Neill",
-    "skaters": ["Shane O'Neill", "Yuto Horigome", "Guy Mariano", "Ish Cepeda", "Daisuke Ikeda"],
-    "description": "April Skateboards' debut full-length. Immaculate technical skating from the world's most precise skaters.",
-    "genre": ["Street", "Technical", "Modern"],
-    "rating": 4,
-    "watchLinks": [{"platform": "YouTube", "url": "https://www.youtube.com/results?search_query=april+purple+playgrounds+full"}],
-    "coverColor": "#9d4edd"
   },
   {
     "id": "we-are-blood",
@@ -252,11 +1124,352 @@
     "year": 2015,
     "company": "Mountain Dew / Brain Farm",
     "director": "Ty Evans",
-    "skaters": ["Paul Rodriguez", "Tiago Lemos", "Clint Walker", "Ryan Sheckler"],
+    "skaters": [
+      "Paul Rodriguez",
+      "Tiago Lemos",
+      "Clint Walker",
+      "Ryan Sheckler"
+    ],
     "description": "A 4K cinematic skateboarding film shot around the world. Stunning visuals that brought skate cinematography to a new level.",
-    "genre": ["Street", "Cinematic", "Documentary"],
+    "genre": [
+      "Street",
+      "Cinematic",
+      "Documentary"
+    ],
     "rating": 4,
-    "watchLinks": [{"platform": "YouTube", "url": "https://www.youtube.com/results?search_query=we+are+blood+skate+film"}],
+    "watchLinks": [
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/results?search_query=we+are+blood+skate+film"
+      }
+    ],
     "coverColor": "#e76f51"
+  },
+  {
+    "id": "vans-propeller",
+    "title": "Propeller (Vans)",
+    "year": 2015,
+    "company": "Vans",
+    "director": "Greg Hunt",
+    "skaters": [
+      "Gilbert Crockett",
+      "Rowan Zorilla",
+      "Geoff Rowley",
+      "Kyle Walker",
+      "Elijah Berle"
+    ],
+    "description": "Vans' stunning full-length directed by Greg Hunt, introducing Rowan Zorilla with one of the most impactful debut parts in modern skating.",
+    "genre": [
+      "Street",
+      "Cinematic"
+    ],
+    "rating": 5,
+    "watchLinks": [
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/results?search_query=vans+propeller+skate"
+      }
+    ],
+    "coverColor": "#c41e3a"
+  },
+  {
+    "id": "inhabitants",
+    "title": "Inhabitants",
+    "year": 2016,
+    "company": "Alien Workshop",
+    "director": "Alien Workshop / Memory Screen",
+    "skaters": [
+      "Gilbert Crockett",
+      "Joey Guevara",
+      "Frankie Spears",
+      "Tyler Bledsoe"
+    ],
+    "description": "Alien Workshop's atmospheric return to form, blending moody cinematography with progressive street skating.",
+    "genre": [
+      "Street",
+      "Art",
+      "Experimental"
+    ],
+    "rating": 4,
+    "watchLinks": [
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/results?search_query=alien+workshop+inhabitants"
+      }
+    ],
+    "coverColor": "#2e8b57"
+  },
+  {
+    "id": "a-beautiful-thing",
+    "title": "A Beautiful Thing",
+    "year": 2016,
+    "company": "Transworld Skateboarding",
+    "director": "Chris Thiessen / Jon Holland",
+    "skaters": [
+      "Chris Joslin",
+      "Tiago Lemos",
+      "Mason Silva",
+      "Zion Wright"
+    ],
+    "description": "Transworld's return to full-length videos showcasing the next generation of progressive street skating.",
+    "genre": [
+      "Street",
+      "Modern"
+    ],
+    "rating": 4,
+    "watchLinks": [
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/results?search_query=transworld+a+beautiful+thing"
+      }
+    ],
+    "coverColor": "#20b2aa"
+  },
+  {
+    "id": "away-days",
+    "title": "Away Days",
+    "year": 2016,
+    "company": "Adidas Skateboarding",
+    "director": "Jason Hernandez",
+    "skaters": [
+      "Tyshawn Jones",
+      "Miles Silvas",
+      "Dennis Busenitz",
+      "Na-Kel Smith",
+      "Daewon Song"
+    ],
+    "description": "Adidas' ambitious global full-length introducing Tyshawn Jones as the future of skateboarding.",
+    "genre": [
+      "Street",
+      "Global",
+      "Modern"
+    ],
+    "rating": 5,
+    "watchLinks": [
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/results?search_query=adidas+away+days"
+      }
+    ],
+    "coverColor": "#000080"
+  },
+  {
+    "id": "king-of-the-road-2016",
+    "title": "King of the Road 2016",
+    "year": 2016,
+    "company": "Thrasher Magazine / Viceland",
+    "director": "Thrasher",
+    "skaters": [
+      "Birdhouse",
+      "Chocolate",
+      "REAL",
+      "Creature"
+    ],
+    "description": "The first televised KOTR season on Viceland \u2014 teams complete escalating challenges across America.",
+    "genre": [
+      "Competition",
+      "Road Trip",
+      "Comedy"
+    ],
+    "rating": 4,
+    "watchLinks": [
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/results?search_query=king+of+the+road+2016+thrasher"
+      }
+    ],
+    "coverColor": "#ff8800"
+  },
+  {
+    "id": "in-bloom",
+    "title": "In Bloom",
+    "year": 2017,
+    "company": "Nike SB",
+    "director": "Jason Hernandez",
+    "skaters": [
+      "Shane O'Neill",
+      "Ishod Wair",
+      "Kevin Bradley",
+      "Carlos Ribeiro"
+    ],
+    "description": "Nike SB's premium production showcasing modern technical street skating with cinematic filming and global locations.",
+    "genre": [
+      "Street",
+      "Cinematic",
+      "Modern"
+    ],
+    "rating": 4,
+    "watchLinks": [
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/results?search_query=nike+sb+in+bloom"
+      }
+    ],
+    "coverColor": "#66cdaa"
+  },
+  {
+    "id": "blessed",
+    "title": "Blessed",
+    "year": 2018,
+    "company": "Supreme",
+    "director": "William Strobeck",
+    "skaters": [
+      "Tyshawn Jones",
+      "Na-Kel Smith",
+      "Sage Elsesser",
+      "Ben Kadow",
+      "Sean Pablo"
+    ],
+    "description": "Supreme's follow-up to Cherry. Tyshawn Jones' part cemented him as one of the best street skaters alive.",
+    "genre": [
+      "Street",
+      "NYC",
+      "Modern"
+    ],
+    "rating": 4,
+    "watchLinks": [
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/results?search_query=supreme+blessed+skate+video"
+      }
+    ],
+    "coverColor": "#c1121f"
+  },
+  {
+    "id": "playing-for-keeps",
+    "title": "Playing for Keeps",
+    "year": 2018,
+    "company": "Primitive Skateboarding",
+    "director": "Alan Hannon",
+    "skaters": [
+      "Paul Rodriguez",
+      "Carlos Ribeiro",
+      "Tiago Lemos",
+      "Bastien Salabanzi"
+    ],
+    "description": "Primitive's debut full-length anchored by P-Rod's consistent excellence and Tiago Lemos' devastating power.",
+    "genre": [
+      "Street",
+      "Modern"
+    ],
+    "rating": 4,
+    "watchLinks": [
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/results?search_query=primitive+playing+for+keeps"
+      }
+    ],
+    "coverColor": "#ffd700"
+  },
+  {
+    "id": "spring-break",
+    "title": "Spring Break",
+    "year": 2019,
+    "company": "WKND Skateboards",
+    "director": "WKND",
+    "skaters": [
+      "Trevor Thompson",
+      "Jordan Taylor",
+      "Karsten Kleppan",
+      "Filip Almqvist"
+    ],
+    "description": "WKND's fun, colorful video matching the brand's playful aesthetic with modern creative skating.",
+    "genre": [
+      "Street",
+      "Creative",
+      "Modern"
+    ],
+    "rating": 3,
+    "watchLinks": [
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/results?search_query=wknd+spring+break+skate"
+      }
+    ],
+    "coverColor": "#ff1493"
+  },
+  {
+    "id": "blessed-bonus",
+    "title": "BLESSED Bonus",
+    "year": 2019,
+    "company": "Supreme",
+    "director": "William Strobeck",
+    "skaters": [
+      "Tyshawn Jones",
+      "Na-Kel Smith",
+      "Sage Elsesser",
+      "Sean Pablo",
+      "Ben Kadow"
+    ],
+    "description": "Extended bonus footage from Supreme's BLESSED capturing raw NYC street sessions.",
+    "genre": [
+      "Street",
+      "NYC",
+      "Raw"
+    ],
+    "rating": 4,
+    "watchLinks": [
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/results?search_query=supreme+blessed+bonus"
+      }
+    ],
+    "coverColor": "#cc0000"
+  },
+  {
+    "id": "gang-gang",
+    "title": "GANG GANG",
+    "year": 2021,
+    "company": "Hockey Skateboards",
+    "director": "Hockey / FA",
+    "skaters": [
+      "Ben Kadow",
+      "Andrew Allen",
+      "Donovon Piscopo",
+      "Caleb Barnett",
+      "Nik Stain"
+    ],
+    "description": "Hockey's grimy, unfiltered team video matching the brand's raw punk energy and DIY aesthetics.",
+    "genre": [
+      "Street",
+      "Punk",
+      "Raw"
+    ],
+    "rating": 4,
+    "watchLinks": [
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/results?search_query=hockey+skateboards+gang+gang"
+      }
+    ],
+    "coverColor": "#1c1c1c"
+  },
+  {
+    "id": "purple-playgrounds",
+    "title": "Purple Playgrounds",
+    "year": 2024,
+    "company": "April Skateboards",
+    "director": "Shane O'Neill",
+    "skaters": [
+      "Shane O'Neill",
+      "Yuto Horigome",
+      "Guy Mariano",
+      "Ish Cepeda",
+      "Daisuke Ikeda"
+    ],
+    "description": "April Skateboards' debut full-length. Immaculate technical skating from the world's most precise skaters.",
+    "genre": [
+      "Street",
+      "Technical",
+      "Modern"
+    ],
+    "rating": 4,
+    "watchLinks": [
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/results?search_query=april+purple+playgrounds+full"
+      }
+    ],
+    "coverColor": "#9d4edd"
   }
 ]
